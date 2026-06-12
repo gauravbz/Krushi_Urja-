@@ -152,6 +152,20 @@ ul {
     align-items: center;
 }
 
+.nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-white);
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -933,7 +947,33 @@ details[open] summary.faq-question::after {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+    }
+
     .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 0 6px;
+        border-top: 1px solid var(--border);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .navbar .btn-primary {
+        display: none;
+    }
+
+    .nav-links a.active::after {
         display: none;
     }
     
