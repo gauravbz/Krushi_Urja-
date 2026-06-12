@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krushi Urja Innovations | Smart Digital Agriculture</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,7 +13,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <i class="fa-solid fa-leaf text-green"></i>
+                <img src="logo.jpeg" alt="Krushi Urja logo" class="site-logo">
                 <div class="logo-text">
                     <h1>Krushi Urja</h1>
                     <span>Innovations</span>
@@ -21,12 +21,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#about">आमच्याबद्दल</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li class="dropdown">
-                    <a href="#services">सुविधा <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="#services">Services <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
                 <li><a href="#project">Waste To Wealth</a></li>
-                <li><a href="#process">कार्यपद्धती</a></li>
+                <li><a href="#process">Process</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -46,8 +46,7 @@
             <div class="hero-content-wrapper text-center">
                 <h1 class="hero-title">Smart Digital Agriculture & Green Energy Platform</h1>
                 <p class="hero-description" style="font-size: 1.3rem; font-weight: 600; color: var(--primary-dark); margin-bottom: 30px;">
-                    <i class="fa-solid fa-handshake"></i> In Association With<br>
-                    <span style="font-size: 1.5rem;">Bhandaraj Seva Sahakari Society Reg.No.461</span>
+                    Krushi Urja Innovations is a sustainable agriculture consultancy and farmer training organization focused on practical organic farming guidance, field-based learning, and long-term rural empowerment.
                 </p>
                 <div class="hero-buttons justify-center" style="justify-content: center; margin-bottom: 50px; display: flex; gap: 15px;">
                     <a href="#services" class="btn btn-primary">सुविधा पहा <i class="fa-solid fa-arrow-right"></i></a>
@@ -87,6 +86,9 @@
             <div class="about-content">
                 <h2>🌿 About Us</h2>
                 <p>Krushi Urja Innovations is a sustainable agriculture consultancy and farmer training organization focused on practical organic farming guidance, field-based learning, and long-term rural empowerment.</p>
+                <div style="margin: 18px 0;">
+                    <button id="know-more-btn" class="btn btn-outline-light">Know more</button>
+                </div>
                 <p>Krushi Urja Innovations is a sustainable agriculture consultancy and farmer training organization committed to supporting farmers through practical organic farming guidance, sustainable agricultural practices, and field-based learning programs.</p>
                 <p>Our work focuses on helping farming communities adopt environmentally responsible and economically sustainable agricultural methods through consultancy, training initiatives, farm guidance, and capacity-building programs.</p>
                 <p>We believe agriculture is not only a source of livelihood, but also the foundation of rural development, environmental sustainability, and future food security. Through practical learning, farmer engagement, and sustainable farming approaches, we aim to encourage resilient agricultural systems that create long-term value for both farmers and communities.</p>
@@ -94,6 +96,7 @@
 
                 <div class="about-founder-visual">
                     <img src="founder.jpeg" alt="Founder Mr. Gaurav G. Bundile" class="founder-img">
+                    <img src="co_founder.jpeg" alt="Co-founder" class="founder-img" style="margin-top:12px;">
                 </div>
             </div>
 
@@ -124,6 +127,31 @@
             </div>
         </div>
     </section>
+
+    <!-- Know More Modal / Slider -->
+    <div id="knowMoreModal" class="modal" aria-hidden="true">
+        <div class="modal-inner">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <div class="slides">
+                <div class="slide" data-index="0">
+                    <h3>Process of Organic Farming Certification</h3>
+                    <div class="modal-image"><img src="page1.jpeg" alt="Process illustration"></div>
+                </div>
+
+                <div class="slide" data-index="1">
+                    <h3>Certification Guide</h3>
+                    <p>This guide covers documentation, timelines, and tips to prepare for inspection: maintain records, segregate inputs, and follow recommended organic practices.</p>
+                    <div class="modal-gallery">
+                        <img src="page2.jpeg" alt="Guide 1">
+                        <img src="page3.jpeg" alt="Guide 2">
+                    </div>
+                </div>
+            </div>
+
+            <button class="modal-nav prev" id="modal-prev" aria-label="Previous">&#10094;</button>
+            <button class="modal-nav next" id="modal-next" aria-label="Next">&#10095;</button>
+        </div>
+    </div>
 
     <!-- FAQ Section -->
     <section id="faq" class="faq-section section">
@@ -337,11 +365,16 @@
         </div>
     </section>
 
+    <!-- Floating Instagram -->
+    <a href="https://instagram.com/krushiurja_innovations" class="instagram-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
     <!-- Floating WhatsApp -->
     <a href="https://wa.me/917773988083" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="Scripts.js"></script>
 </body>
 </html>
